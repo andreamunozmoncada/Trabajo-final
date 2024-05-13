@@ -1,0 +1,90 @@
+/* -----------------------configuraciones generales ----------------------- */
+
+@font-face {
+    font-family: 'Rancho Sedan';
+    src: url(../assets/fonts/Sedan_SC/SedanSC-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Rancho Sedan', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #525252;
+}
+
+header {
+    text-align: center;
+    background-color: #5a0162;
+
+}
+
+.header__img {
+    width: 30rem;
+
+}
+
+#heroes {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.Guerreros__z {
+    gap: 1rem;
+    margin: 2rem;
+    text-align: center;
+    border: 0.5rem solid rgb(0, 0, 0);
+    border-radius: 5%;
+    background-color: rgb(255, 255, 255);
+    transition: opacity 0.5s ease;
+    opacity: 1;
+    text-align: center;
+    font-size: 3rem;
+    margin: 1rem;
+    color: rgb(0, 0, 0);
+}
+
+.pagination{
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    font-size: 1rem;
+    background-color: #525252;
+    color: aliceblue;
+}
+
+@media(width <=320px) {
+    #heroes {
+        grid-template-columns: repeat(1, 30rem);
+    }
+}
+
+@media (width >=768px) {
+    #heroes {
+        grid-template-columns: repeat(2, 30rem);
+    }
+}
+
+@media (width >=1024px) {
+    #heroes {
+        grid-template-columns: repeat(3, 30rem);
+    }
+}
+
+
+@media (width >=1440px) {
+    #heroes{
+        grid-template-columns: repeat(4, 30rem);
+    }
+}
+
+@media (width >=2560px) {
+    #heroes {
+        grid-template-columns: repeat(8, 30rem);
+    }
+}
